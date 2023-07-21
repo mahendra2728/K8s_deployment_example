@@ -13,4 +13,23 @@ public class GreetingResource {
     public String hello() {
         return "Hello from RESTEasy Reactive";
     }
+
+
+    @Path("/welcome")
+    @GET
+    public String welcomeMessage(){
+        return "Hi Welcome to K8s";
+    }
+
+    @Path("/welcome2")
+    @GET
+    public String welcomeMessage3(){
+        return "Hi Welcome3 to K8s";
+    }
+
+    @Path("/welcome3")
+    @GET
+    public String welcomeMessage4(){
+        return "Hi Welcome3 to K8s";
+    }
 }
